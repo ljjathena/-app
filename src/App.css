@@ -1,38 +1,48 @@
 .App {
-  text-align: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button:hover {
+    background-color: #45a049;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.room-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.room-card h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+.room-card p {
+    font-size: 1em;
+    color: #666;
 }
